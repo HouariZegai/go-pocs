@@ -6,6 +6,11 @@ import (
 	"rsc.io/quote"
 )
 
+func Greeting(name string) string {
+	message := fmt.Sprintf("Hi %v, welcome!", name)
+	return message
+}
+
 func main() {
 	var conferenceName = "Go conference"
 	const totalTickets = 10
@@ -15,5 +20,5 @@ func main() {
 	fmt.Println("Get your tickets here to attend")
 	fmt.Printf("We have total of %v tickets and %v are still available\n", totalTickets, remainingTickets)
 	fmt.Println(quote.Go())
-
+	fmt.Println(Greeting("Mohamed"))
 }
