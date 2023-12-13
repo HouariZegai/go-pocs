@@ -13,7 +13,7 @@ To run the Go app, follow these steps:
 2. Change into the project directory:
 
     ```bash
-    cd booking-app
+    cd github.com/houarizegai/booking-app
     ```
 
 3. Initialize the Go module:
@@ -28,7 +28,12 @@ To run the Go app, follow these steps:
     go mod download
     ```
 
-5. Run the main file using the `go run` command:
+5. If you want to download packages:
+    ```shell
+    go mod tidy
+    ```
+
+6. Run the main file using the `go run` command:
 
     ```bash
     go run main.go
