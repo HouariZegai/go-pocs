@@ -7,19 +7,19 @@ To run the Go app, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/houarizegai/booking-app.git
+    git clone https://github.com/houarizegai/go-pocs.git
     ```
 
 2. Change into the project directory:
 
     ```bash
-    cd github.com/houarizegai/booking-app
+    cd github.com/houarizegai/go-pocs
     ```
 
 3. Initialize the Go module:
 
     ```bash
-    go mod init booking-app
+    go mod init houarizegai.com/go-pocs
     ```
 
 4. Install the project dependencies:
