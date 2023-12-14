@@ -1,4 +1,4 @@
-# Booking App
+# Go Lang POCs
 
 ## Getting Started
 
