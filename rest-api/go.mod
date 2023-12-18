@@ -1,4 +1,4 @@
-module houarizegai.com/web-api
+module houarizegai.com/rest-api
 
 go 1.21.5
 

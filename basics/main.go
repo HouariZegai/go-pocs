@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
+
+	"houarizegai.com/basics/helper"
 )
 
 // Package level variable
-const appName = "GoLang Basics Application"
-
 var tickets = 10
 
 func main() {
@@ -119,7 +120,7 @@ func main() {
 		var email string
 		fmt.Print("Enter your email: ")
 		fmt.Scan(&email)
-		validEmail, alwaysTrue := validEmail(email)
+		validEmail, alwaysTrue := helper.ValidEmail(email)
 		if !validEmail {
 			continue
 		}
@@ -145,8 +146,18 @@ func main() {
 	default:
 		fmt.Println("City is not located in West nor Center of Algeria")
 	}
+
+	fmt.Println("\nMap")
+	var userMap = make(map[string]string)
+	userMap["name"] = "Omar"
+	userMap["country"] = "Algeria"
+	userMap["age"] = strconv.FormatUint(uint64(40), 10)
+
+	fmt.Println(userMap)
+	fmt.Println("User country: ", userMap["country"])
+	fmt.Printf("Data type of age is: %T\n", userMap["age"])
 }
 
 func greeting() {
-	fmt.Println("Welcome to our", appName)
+	fmt.Println("Welcome to our", helper.AppName)
 }
