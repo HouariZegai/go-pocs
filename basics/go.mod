@@ -1,3 +1,3 @@
-module houarizegai.com/basics
+module basics
 
 go 1.21.5
